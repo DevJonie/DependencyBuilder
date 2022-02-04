@@ -33,7 +33,7 @@ public static class DependencyBuilder
             ? Activator.CreateInstance(type)
             : Activator.CreateInstance(type, paramInstances);
 
-        _ = objectInstance ?? throw new Exception($"Could not create instance of {nameof(type)}");
+        _ = objectInstance ?? throw new Exception($"Could not create instance of {type.Name}");
 
         return objectInstance;
     }
