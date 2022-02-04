@@ -1,7 +1,6 @@
-﻿
-var service = DependencyBuilder.BuildDependencyTree<A>();
+var serviceA = DependencyBuilder.BuildDependencyTree<A>();
 
-Console.WriteLine(service.Message);
+Console.WriteLine(serviceA.Message);
 
 public static class DependencyBuilder
 {
